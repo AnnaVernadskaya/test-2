@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  background: black;
+  font-family: Arial, sans-serif;
+  color: white;
+  padding: 9vw;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.text {
+  max-width: 1800px;
+  width: 100%;
+  font-size: clamp(24px, 5vw, 96px);
+  font-weight: bold;
+  line-height: 1.3;
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+}
+
+p {
+  margin: 0 0 3vh 0;
+}
+
+.video-mask {
+  display: inline-block;
+  width: clamp(140px, 20vw, 390px);
+  height: clamp(40px, 6vh, 70px);
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+}
+
+.video-mask video {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.mask1 video {
+  left: -12vw;
+  top: -5vh;
+}
+
+.mask2 video {
+  left: -24vw;
+  top: -10vh;
+}
+
+.mask3 video {
+  left: -36vw;
+  top: -20vh;
+}
+
+.mask4 video {
+  left: -50vw;
+  top: -30vh;
+}
